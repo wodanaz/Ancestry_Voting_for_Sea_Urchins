@@ -7,9 +7,7 @@ module load Anaconda3
 conda env create -f Seurat4.yml --prefix /data/wraycompute/alejo/conda/Seurat4 
 
 ```
-
-
-note you need a Seurat4.yml file, to create simply run:
+Please note you need a Seurat4.yml file, to create simply run:
 
 ```bash 
 nano Seurat4.yml
