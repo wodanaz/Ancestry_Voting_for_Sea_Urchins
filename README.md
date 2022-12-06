@@ -4,7 +4,10 @@ These scripts were created to show how we were able to run Ancestry Voting in Th
 
 This is an standalone R script to implement ancestry voting, as in Qiu et al (2022) > https://www.nature.com/articles/s41588-022-01018-x
 
-![image](https://user-images.githubusercontent.com/5439367/206005938-138f9a7a-c72f-405d-9519-b2023ab989f5.png)
+The following pipelines will allow you to build a developmental cladogram like the following in Sea Urchins
+
+![image](https://user-images.githubusercontent.com/5439367/206006293-870215a2-83bd-409f-aca8-1d9e795a05aa.png)
+
 
 
 
