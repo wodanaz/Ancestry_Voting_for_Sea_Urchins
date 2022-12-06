@@ -238,3 +238,27 @@ dev.off()
 
 ```
 
+
+
+
+Once this job has been completed, there should be two files in AncestryVoting4 directory:
+AncestriesHeatmap.pdf
+and,
+filtered.ancestry.csv
+
+Which will have all the cell trajectories in a csv table
+
+
+
+|Parent|Child|Support|Stage|
+| --------- | --------- | --------- | --------- |
+|xxx15|xxx15|0.645792483660131|3_HPF|
+|xxx8|xxx15|0.354207516339869|3_HPF|
+|xxx16|xxx16|0.663450834879406|3_HPF|
+|xxx8|xxx16|0.336126343496381|3_HPF|
+|xxx8|xxx8|0.997613365155131|3_HPF|
+|xxx15|xxx15|1|4_HPF|
+|xxx16|xxx16|0.975455147302218|4_HPF|
+|xxx8|xxx3|0.7|4_HPF|
+|xxx8|xxx1|1|5_HPF|
+
