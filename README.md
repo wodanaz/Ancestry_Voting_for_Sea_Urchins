@@ -144,7 +144,7 @@ mergedRNA$Stage<- factor(mergedRNA$Stage, levels = c("2_HPF", "3_HPF","4_HPF","5
 Idents(mergedRNA) 
 mergedRNA@active.ident
 
-
+# here you can assigne names for each cluster in the Seurat object
 
 mergedRNA <- RenameIdents(mergedRNA, `0` = "xxx0", `1` = "xxx1", `2` = "xxx2",
                                   `3` = "xxx3", `4` = "xxx4", `5` = "xxx5", `6` = "xxx6", `7` = "xxx7", `8` = "xxx8", `9` = "xxx9",
