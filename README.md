@@ -246,8 +246,7 @@ AncestriesHeatmap.pdf
 and,
 filtered.ancestry.csv
 
-Which will have all the cell trajectories in a csv table
-
+Which will have all the cell trajectories in a csv table that includes child to parent information:
 
 
 |Parent|Child|Support|Stage|
