@@ -9,9 +9,28 @@ The following pipelines will allow you to build a developmental cladogram like t
 ![image](https://user-images.githubusercontent.com/5439367/206006293-870215a2-83bd-409f-aca8-1d9e795a05aa.png)
 
 
+To run using SLURM in an HPC, run the following job launcher:
+
+
+
+```bash
+#! /bin/bash -l
+#SBATCH -J Anc2
+#SBATCH --mail-type=END,FAIL
+#SBATCH --mail-user=ab620@duke.edu
+#SBATCH --mem 50G
+cd /data/wraycompute/alejo/singlecell/ancestry_voting2
+Rscript ancestry.R
+```
+
+But first, make sure you have an R script called ancestry.R with the following code. 
+
+note: Remember to modify the hard code to fit your experiment
+
+
 ```R
 #code adapted from https://github.com/ChengxiangQiu/tome_code
-#author of RScript: Jonas Brandenburg
+#author of RScript: Jonas Brandenburg, implemented and adapted to sea urchin data by Alejandro Berrio 
 
 #packages
 library(Seurat)
@@ -23,21 +42,8 @@ library(viridis)
 library(reshape)
 library(doParallel)
 
-#NCORES <- 80
 
-#mysystem = Sys.info()[["sysname"]]
-#if (mysystem == "Darwin"){
-#  registerDoParallel(NCORES)
-#  register(DoparParam())
-#}else if (mysystem == "Linux"){
-#  register(bpstart(MulticoreParam(workers=NCORES)))
-#}else{
-#  print("Please change this to allow parallel computing on your computer.")
-#  register(SerialParam())
-#}
-
-
-#locations 
+#Create a directory location to save data
 inDir=""
 outDir <- paste0(inDir,  "AncestryVoting4/")
 dir.create(outDir)
